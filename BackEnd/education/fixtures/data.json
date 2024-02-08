@@ -1,0 +1,614 @@
+[
+  {
+    "model": "authorization.Permission",
+    "pk": 1,
+    "fields": {
+      "level": 1,
+      "description": "Admin"
+    }
+  },
+  {
+    "model": "authorization.Permission",
+    "pk": 2,
+    "fields": {
+      "level": 2,
+      "description": "Guarantor"
+    }
+  },
+  {
+    "model": "authorization.Permission",
+    "pk": 3,
+    "fields": {
+      "level": 3,
+      "description": "Instructor"
+    }
+  },
+  {
+    "model": "authorization.Permission",
+    "pk": 4,
+    "fields": {
+      "level": 4,
+      "description": "Scheduler"
+    }
+  },
+  {
+    "model": "authorization.Permission",
+    "pk": 5,
+    "fields": {
+      "level": 5,
+      "description": "Student"
+    }
+  },
+
+  {
+    "model": "authorization.User",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$IAwfn3mf7647IQPraIN3Gi$NiAdHYOMJj9G1L93TP2skKn8a7XoOgPcJ4d0PFFm+ss=",
+      "username": "admin",
+      "first_name": "John",
+      "last_name": "Smith",
+      "email": "admin@gmail.com",
+      "permission": 1
+    }
+  },
+  {
+    "model": "authorization.User",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$ucPXFj3WeIEtauuvAktaM0$XTsfkW26IZI4UK/XHMaoMHiFdkl3sZeTO0wnja0HmXU=",
+      "username": "guarantor",
+      "first_name": "Jan",
+      "last_name": "Novak",
+      "email": "guarantor@gmail.com",
+      "permission": 2
+    }
+  },
+  {
+    "model": "authorization.User",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$aVGeYEm3q7VQ4fYjRQ98i8$3bmEtJpqXLV7ShEx5caT8Rb1OsZ5kYtP7VIO5xED6QU=",
+      "username": "johnson",
+      "first_name": "Alice",
+      "last_name": "Johnson",
+      "email": "johnson@gmail.com",
+      "permission": 2
+    }
+  },
+  {
+    "model": "authorization.User",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$IMPvz6ndQZB8xgCZBBbJu5$U4vowTBZQaX0IPiAuBGNxI2tRz/zNKg+7cha8QJ9nv8=",
+      "username": "williams",
+      "first_name": "Bob",
+      "last_name": "Williams",
+      "email": "williams@gmail.com",
+      "permission": 2
+    }
+  },
+  {
+    "model": "authorization.User",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$qUz8x80PLSJiUNa5n6vAzo$9ViA7tFIWT7n0krtJwNXg6aRkwXcRYrZcOIgD/iGVlM=",
+      "username": "davis",
+      "first_name": "Davis",
+      "last_name": "Davis",
+      "email": "davis@gmail.com",
+      "permission": 2
+    }
+  },
+  {
+    "model": "authorization.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$kOHfr6RFF7w1te0hfsh4CQ$QytNjdXztdcwA5CwOBEJZReDkTt6ZpumF3JqWqGR7b4=",
+      "username": "instructor",
+      "first_name": "Chloe",
+      "last_name": "Turner",
+      "email": "chloe.turner@example.com",
+      "permission": 3
+    }
+  },
+  {
+    "model": "authorization.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$HE6rRNSEy3eo6y4BZE4B4W$pj9TZSBVP+3aNx3heL5Ko7UeyiiKiuwA/pnejl2Gz3Q=",
+      "username": "doe",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "permission": 3
+    }
+  },
+  {
+    "model": "authorization.user",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$YgLhAQHFuYeK7nK9FtVpPV$+lNoZUUYla3tZvTKBbpmu1GhHKcQcTrat0H2cEySOfg=",
+      "username": "smith",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@example.com",
+      "permission": 3
+    }
+  },
+  {
+    "model": "authorization.user",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$Fn1TL49TFz1auDxWWko4RM$MbZXFRGfvdzyHJVODx+zJ2QjLWDBO6UdlrCB0BCTlz0=",
+      "username": "miller",
+      "first_name": "Bob",
+      "last_name": "Miller",
+      "email": "bob.miller@example.com",
+      "permission": 3
+    }
+  },
+  {
+    "model": "authorization.User",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$h7mbJNg4vECrT0ChT4WDup$sKrXrrGArXK8xL8WpInZmIH/9uyJkRAHYfhC+NUmAYs=",
+      "username": "scheduler",
+      "first_name": "Michael",
+      "last_name": "Cooper",
+      "email": "scheduler@gmail.com",
+      "permission": 4
+    }
+  },
+  {
+    "model": "authorization.user",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$oZjIO0lv8oBIzUcgT6xvvw$TQHS/VrsEqbsdabRknAs5hY2WqrxbRFslF8Dp992bqc=",
+      "username": "student",
+      "first_name": "Liam",
+      "last_name": "Mitchell",
+      "email": "liam.mitchell@example.com",
+      "date_joined": "2023-11-26T18:53:18.979Z",
+      "permission": 5
+    }
+  },
+  {
+    "model": "authorization.user",
+    "pk": 12,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$QoYcRU5VZ95JrBjQDIOj7i$pKfketH+5Lr0YWfXJ8vxj/7o8gB5kq90A4HrJVhQAwM=",
+      "username": "brown",
+      "first_name": "Michael",
+      "last_name": "Brown",
+      "email": "michael.brown@example.com",
+      "permission": 5
+    }
+  },
+  {
+    "model": "authorization.user",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$CJACUePLsnGywCL9H6rWEO$GbOt4FXHEb00JdYqXnikYET63UaEu9Qult4/rIvorKY=",
+      "username": "white",
+      "first_name": "Olivia",
+      "last_name": "White",
+      "email": "olivia.white@example.com",
+      "permission": 5
+    }
+  },
+  {
+    "model": "authorization.user",
+    "pk": 14,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$Uk7LMG037MlrO0Q8RktFdg$3TiSrC5mFtsj3BIdw+EXgB80lsCq7aQpDse45WIh3bA=",
+      "username": "harris",
+      "first_name": "Sophia",
+      "last_name": "Harris",
+      "email": "sophia.harris@example.com",
+      "permission": 5
+    }
+  },
+  {
+    "model": "authorization.user",
+    "pk": 15,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$CX64e71rnmS9mWV13Wcbt1$TqEK4kdXtpZ52+k1sEDQIcECKVBzdC5mLBsRAezBvs8=",
+      "username": "carter",
+      "first_name": "Liam",
+      "last_name": "Carter",
+      "email": "liam.carter@example.com",
+      "permission": 5
+    }
+  },
+
+  {
+    "model": "education.Subject",
+    "pk": 1,
+    "fields": {
+      "code": "IIS",
+      "name": "Information Systems",
+      "guarantor": 2,
+      "description": "In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation, such as web pages, typography, and graphical layout"
+    }
+  },
+  {
+    "model": "education.Subject",
+    "pk": 2,
+    "fields": {
+      "code": "ITU",
+      "name": "User Interface Programming",
+      "guarantor": 3,
+      "description": "In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation, such as web pages, typography, and graphical layout"
+    }
+  },
+  {
+    "model": "education.Subject",
+    "pk": 3,
+    "fields": {
+      "code": "ISA",
+      "name": "Network Applications and Network Administration",
+      "guarantor": 4,
+      "description": "In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation, such as web pages, typography, and graphical layout"
+    }
+  },
+  {
+    "model": "education.Subject",
+    "pk": 4,
+    "fields": {
+      "code": "ISS",
+      "name": "Signals and Systems",
+      "guarantor": 5,
+      "description": "In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation, such as web pages, typography, and graphical layout"
+    }
+  },
+
+  {
+    "model": "education.InstructorSubject",
+    "pk": 1,
+    "fields": {
+      "instructor": 2,
+      "subject": 1
+    }
+  },
+  {
+    "model": "education.InstructorSubject",
+    "pk": 2,
+    "fields": {
+      "instructor": 6,
+      "subject": 1
+    }
+  },
+  {
+    "model": "education.InstructorSubject",
+    "pk": 3,
+    "fields": {
+      "instructor": 3,
+      "subject": 2
+    }
+  },
+  {
+    "model": "education.InstructorSubject",
+    "pk": 4,
+    "fields": {
+      "instructor": 7,
+      "subject": 2
+    }
+  },
+  {
+    "model": "education.InstructorSubject",
+    "pk": 5,
+    "fields": {
+      "instructor": 4,
+      "subject": 3
+    }
+  },
+  {
+    "model": "education.InstructorSubject",
+    "pk": 6,
+    "fields": {
+      "instructor": 5,
+      "subject": 4
+    }
+  },
+
+  {
+    "model": "education.StudentSubject",
+    "pk": 1,
+    "fields": {
+      "student": 11,
+      "subject": 1
+    }
+  },
+  {
+    "model": "education.StudentSubject",
+    "pk": 2,
+    "fields": {
+      "student": 11,
+      "subject": 2
+    }
+  },
+  {
+    "model": "education.StudentSubject",
+    "pk": 3,
+    "fields": {
+      "student": 11,
+      "subject": 3
+    }
+  },
+
+  {
+    "model": "education.Room",
+    "pk": 1,
+    "fields": {
+      "number": 101,
+      "description": ""
+    }
+  },
+  {
+    "model": "education.Room",
+    "pk": 2,
+    "fields": {
+      "number": 102,
+      "description": ""
+    }
+  },
+  {
+    "model": "education.Room",
+    "pk": 3,
+    "fields": {
+      "number": 103,
+      "description": ""
+    }
+  },
+  {
+    "model": "education.Room",
+    "pk": 4,
+    "fields": {
+      "number": 201,
+      "description": ""
+    }
+  },
+  {
+    "model": "education.Room",
+    "pk": 5,
+    "fields": {
+      "number": 203,
+      "description": ""
+    }
+  },
+  {
+    "model": "education.Room",
+    "pk": 6,
+    "fields": {
+      "number": 202,
+      "description": ""
+    }
+  },
+
+  {
+    "model": "education.ActivityType",
+    "pk": 1,
+    "fields": {
+        "notation": "Lec",
+        "name": "Lecture"
+    }
+  },
+  {
+      "model": "education.ActivityType",
+      "pk": 2,
+      "fields": {
+          "notation": "P",
+          "name": "Practice"
+      }
+  },
+  {
+      "model": "education.ActivityType",
+      "pk": 3,
+      "fields": {
+          "notation": "Lab",
+          "name": "Laboratory"
+      }
+  },
+  {
+      "model": "education.ActivityType",
+      "pk": 4,
+      "fields": {
+          "notation": "E",
+          "name": "Exam"
+      }
+  },
+
+  {
+      "model": "education.ActivityRepetition",
+      "pk": 1,
+      "fields": {
+          "name": "Every week"
+      }
+  },
+  {
+      "model": "education.ActivityRepetition",
+      "pk": 2,
+      "fields": {
+          "name": "Even week"
+      }
+  },
+  {
+      "model": "education.ActivityRepetition",
+      "pk": 3,
+      "fields": {
+          "name": "Odd week"
+      }
+  },
+  {
+      "model": "education.ActivityRepetition",
+      "pk": 4,
+      "fields": {
+          "name": "One time"
+      }
+  },
+
+  {
+    "model": "education.Activity",
+    "pk": 1,
+    "fields": {
+      "activity_type": 1,
+      "activity_repetition": 1,
+      "guarantor_notes": "Guarantor notes...",
+      "instructor_notes": "Instructor notes...",
+      "duration": 3,
+      "subject": 1,
+      "date_from": "2023-09-18",
+      "date_to": "2023-12-17",
+      "time": "10:00:00",
+      "day": "Mon",
+      "room": 1,
+      "instructor": 2
+    }
+  },
+  {
+    "model": "education.Activity",
+    "pk": 2,
+    "fields": {
+      "activity_type": 2,
+      "activity_repetition": 1,
+      "guarantor_notes": "Guarantor notes...",
+      "instructor_notes": null,
+      "duration": 2,
+      "subject": 1,
+      "date_from": "2023-09-18",
+      "date_to": "2023-12-17",
+      "time": "8:00:00",
+      "day": "Tue",
+      "room": 4,
+      "instructor": 6
+    }
+  },
+  {
+    "model": "education.Activity",
+    "pk": 3,
+    "fields": {
+      "activity_type": 4,
+      "activity_repetition": 4,
+      "guarantor_notes": "Guarantor notes...",
+      "instructor_notes": null,
+      "duration": 1,
+      "subject": 1,
+      "date_from": "2023-11-13",
+      "date_to": "2023-11-19",
+      "time": "9:00:00",
+      "day": "Thu",
+      "room": 1,
+      "instructor": 2
+    }
+  },
+  {
+    "model": "education.Activity",
+    "pk": 4,
+    "fields": {
+      "activity_type": 1,
+      "activity_repetition": 1,
+      "guarantor_notes": "Guarantor notes...",
+      "instructor_notes": null,
+      "duration": 3,
+      "subject": 2,
+      "date_from": "2023-09-18",
+      "date_to": "2023-12-17",
+      "time": null,
+      "day": null,
+      "room": null,
+      "instructor": 3
+    }
+  },
+  {
+    "model": "education.Activity",
+    "pk": 5,
+    "fields": {
+      "activity_type": 2,
+      "activity_repetition": 2,
+      "guarantor_notes": "Guarantor notes...",
+      "instructor_notes": null,
+      "duration": 2,
+      "subject": 2,
+      "date_from": "2023-09-18",
+      "date_to": "2023-12-17",
+      "time": null,
+      "day": null,
+      "room": null,
+      "instructor": 7
+    }
+  },
+  {
+    "model": "education.Activity",
+    "pk": 6,
+    "fields": {
+      "activity_type": 4,
+      "activity_repetition": 4,
+      "guarantor_notes": "Guarantor notes...",
+      "instructor_notes": null,
+      "duration": 1,
+      "subject": 2,
+      "date_from": "2023-11-13",
+      "date_to": "2023-11-19",
+      "time": null,
+      "day": null,
+      "room": null,
+      "instructor": 3
+    }
+  },
+  {
+    "model": "education.Activity",
+    "pk": 7,
+    "fields": {
+      "activity_type": 1,
+      "activity_repetition": 1,
+      "guarantor_notes": "Guarantor notes...",
+      "instructor_notes": null,
+      "duration": 2,
+      "subject": 3,
+      "date_from": "2023-11-20",
+      "date_to": "2023-12-10",
+      "time": null,
+      "day": null,
+      "room": null,
+      "instructor": null
+    }
+  },
+  {
+    "model": "education.Activity",
+    "pk": 8,
+    "fields": {
+      "activity_type": 2,
+      "activity_repetition": 3,
+      "guarantor_notes": "Guarantor notes...",
+      "instructor_notes": null,
+      "duration": 2,
+      "subject": 3,
+      "date_from": "2023-11-20",
+      "date_to": "2023-12-31",
+      "time": null,
+      "day": null,
+      "room": null,
+      "instructor": null
+    }
+  },
+  {
+    "model": "education.Activity",
+    "pk": 9,
+    "fields": {
+      "activity_type": 4,
+      "activity_repetition": 4,
+      "guarantor_notes": "Guarantor notes...",
+      "instructor_notes": null,
+      "duration": 2,
+      "subject": 3,
+      "date_from": "2023-11-13",
+      "date_to": "2023-11-19",
+      "time": null,
+      "day": null,
+      "room": null,
+      "instructor": null
+    }
+  }
+]
+    
